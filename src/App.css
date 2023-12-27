@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+.tete{
+  display : inline-flex ;
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  padding-left: 50px;
+  font-size: 17px;
+  text-decoration: none;
+  color: #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+
+}
+
+.container-Hero{
+  display: grid;
+  grid-template-areas:
+      "left right";
+  background-color: #495E57;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 500px;
+
+}
+
+.grill-un{
+  grid-area: left;
+  margin-top: 5%;
+
+}
+.h1-Hero{
+  margin: 0;
+  font-size: 64px;
+  color: #F4CE14;
+}
+.h2-Hero{
+  margin: 0;
+  font-size: 40px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.p-Hero{
+  color: #ffffff;
+  width: 400px;
+  font-size: 32px;
+}
+.B-Hero{
+  background-color: #F4CE14;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  width: 200px;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.grill-deux{
+  grid-area: right;
+
+}
+
+#Image-Hero{
+  width: 450px;
+  height: 450px;
+  margin-top: 20%;
+  margin-left: 15%;
+  border-radius: 10px;
+}
+
+
+
+.container-Spe{
+  display: grid;
+  grid-template-areas:
+        "top"
+        "bot";
+  padding-left: 15%;
+  padding-right: 15%;
+      }
+
+
+.container-I{
+  display: grid;
+  grid-area: top;
+  grid-template-areas: "left right";
+  margin-top:10%;
+  margin-bottom: 5%;
+}
+.container-A{
+  display: grid;
+  grid-area: left;
+}
+.h1-Spe{
+  margin: 0;
+}
+.container-B{
+  display: grid;
+  grid-area: right;
+}
+
+.container-II{
+  display: grid;
+  grid-area: bot;
+  grid-template-areas: "left center right";
+}
+.container-A{
+  display: grid;
+  grid-area: left;
+}
+.container-B{
+  display: grid;
+  grid-area: center;
+}
+.container-C{
+  display: grid;
+  grid-area: right;
+}
+
+.Testimony{
+  padding-left: 15%;
+  padding-right: 15%;
+
+}
+.Image-testimony{
+  width: 5vw;
+  height: 5vw;
 }
